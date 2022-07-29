@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "compare": "cpp",
+        "xlocinfo": "cpp",
+        "stdexcept": "cpp"
+    }
+}

@@ -1,0 +1,5 @@
+D:/Code/vscode/MyHomeWork/build/CMakeFiles/endlessLoop.dir
+D:/Code/vscode/MyHomeWork/build/CMakeFiles/segmentationFault.dir
+D:/Code/vscode/MyHomeWork/build/CMakeFiles/findKthStr.dir
+D:/Code/vscode/MyHomeWork/build/CMakeFiles/edit_cache.dir
+D:/Code/vscode/MyHomeWork/build/CMakeFiles/rebuild_cache.dir

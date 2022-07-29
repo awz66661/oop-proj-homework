@@ -1,0 +1,3 @@
+C:/Users/awz93/Desktop/Lab3/build/CMakeFiles/n_gram.dir
+C:/Users/awz93/Desktop/Lab3/build/CMakeFiles/edit_cache.dir
+C:/Users/awz93/Desktop/Lab3/build/CMakeFiles/rebuild_cache.dir

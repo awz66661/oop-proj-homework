@@ -1,0 +1,271 @@
+{
+    "name": "TA",
+    "id": "TA",
+    "time": "2022-03-23 16:54:50",
+    "tests": [
+        {
+            "test": "command_test1",
+            "stdin": "l\nq\n",
+            "stdout": "> 1: This is a test file.\n2: We love OOP!\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test2",
+            "stdin": "list\nq\n",
+            "stdout": "> 1: This is a test file.\n2: We love OOP!\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test3",
+            "stdin": "i 2 test3\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: test3\n3: We love OOP!\n4: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test4",
+            "stdin": "insert 2 test4\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: test4\n3: We love OOP!\n4: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test5",
+            "stdin": "i 2 test5\ni 3 test5\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: test5\n3: test5\n4: We love OOP!\n5: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test6",
+            "stdin": "e 2 test6\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: test6\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test7",
+            "stdin": "edit 2 test6\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: test6\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test8",
+            "stdin": "e 2 test8\ne 3 test8\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: test8\n3: test8\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test9",
+            "stdin": "d 2\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test10",
+            "stdin": "delete 3\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: We love OOP!\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test11",
+            "stdin": "d 1\nd 2\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: We love OOP!\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test12",
+            "stdin": "i 1 test12\ne 2 test12\ni 3 test12\nd 3\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: test12\n2: test12\n3: We love OOP!\n4: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test13",
+            "stdin": "i 2 test13\ne 3 test13\nd 1\nw\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: test13\n2: test13\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "test13\ntest13\n1 + 1 = 2\n",
+            "other": "other"
+        },
+        {
+            "test": "command_test14",
+            "stdin": "i 2 test14\ne 3 test14\nd 1\nwrite\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: test14\n2: test14\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "test14\ntest14\n1 + 1 = 2\n",
+            "other": "other"
+        },
+        {
+            "test": "command_test15",
+            "stdin": "i 2 test15\ne 3 test15\nd 1\nw\nr\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: test15\n2: test15\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "test15\ntest15\n1 + 1 = 2\n",
+            "other": "other"
+        },
+        {
+            "test": "command_test16",
+            "stdin": "i 2 test16\ne 3 test16\nd 1\nw test/other.txt\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: test16\n2: test16\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "test16\ntest16\n1 + 1 = 2\n"
+        },
+        {
+            "test": "command_test17",
+            "stdin": "i 2 test17\ne 3 test17\nd 1\nw test/other.txt\nr\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: We love OOP!\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "test17\ntest17\n1 + 1 = 2\n"
+        },
+        {
+            "test": "command_test18",
+            "stdin": "i 2 test18\ne 3 test18\nd 1\nw test/other.txt\nr test/other.txt\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: test18\n2: test18\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "test18\ntest18\n1 + 1 = 2\n"
+        },
+        {
+            "test": "command_test19",
+            "stdin": "i 2 test19\ne 3 test19\nd 1\nr\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: This is a test file.\n2: We love OOP!\n3: 1 + 1 = 2\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test20",
+            "stdin": "i 2 test20\ne 3 test20\nd 1\nr test/other.txt\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: other\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "command_test21",
+            "stdin": "i 2 test21\ne 3 test21\nd 1\nw\nr test/other.txt\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: other\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "test21\ntest21\n1 + 1 = 2\n",
+            "other": "other"
+        },
+        {
+            "test": "command_test22",
+            "stdin": "i 2 test22\ne 3 test22\nd 1\nw\nr\nr test/other.txt\nl\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> \u001b[32mOK\n\u001b[0m> 1: other\n\u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "test22\ntest22\n1 + 1 = 2\n",
+            "other": "other"
+        },
+        {
+            "test": "error_test1",
+            "stdin": "d 14\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mRuntime error\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test2",
+            "stdin": "i 0 test2\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mRuntime error\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test3",
+            "stdin": "i 14 test3\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mRuntime error\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test4",
+            "stdin": "i 4 test4\nq\n",
+            "stdout": "> \u001b[32mOK\n\u001b[0m> ",
+            "stderr": "",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test5",
+            "stdin": "e 0 test5\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mRuntime error\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test6",
+            "stdin": "e 14 test6\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mRuntime error\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test7",
+            "stdin": "anycommand\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mInvalid command\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test8",
+            "stdin": "r 9\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mRuntime error\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test9",
+            "stdin": "r notexist.txt\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mRuntime error\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test10",
+            "stdin": "e 9\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mInvalid command\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        },
+        {
+            "test": "error_test11",
+            "stdin": "e\nq\n",
+            "stdout": "> > ",
+            "stderr": "\u001b[31mInvalid command\n\u001b[0m",
+            "content": "This is a test file.\nWe love OOP!\n1 + 1 = 2",
+            "other": "other"
+        }
+    ]
+}
